@@ -76,13 +76,9 @@
     </section>
     <section class="px-20 py-32">
       <div class="grid grid-cols-3 gap-3">
-        <div class="relative">
+        <div v-for="explore in explores" :key="explore.image" class="relative">
           <div>
-            <img
-              class="z-0"
-              src="https://i.ibb.co/vPRZmrm/destination1.png"
-              alt=""
-            />
+            <img class="z-0" :src="explore.image" alt="" />
           </div>
           <div
             class="
@@ -91,7 +87,7 @@
               absolute
               py-5
               px-3
-              w-3/4
+              w-4/5
               -mt-16
               block
               z-10
@@ -99,19 +95,56 @@
             "
           >
             <div class="flex justify-end">
-              <h1 class="text-sm">Brazil</h1>
+              <h1 class="text-sm">{{ explore.location }}</h1>
             </div>
-            <h1 class="text-xl font-mono">Travel to Mountains</h1>
+            <h1 class="text-xl font-mono">{{ explore.title }}</h1>
             <div class="flex justify-end">
-              <h1 class="font-light">$6000</h1>
+              <h1 class="font-light">{{ explore.price }}</h1>
             </div>
           </div>
         </div>
-        <div>
-          <img src="https://i.ibb.co/f0gwTzc/destination2.png" alt="" />
-        </div>
-        <div>
-          <img src="https://i.ibb.co/Vgz632C/destination3.png" alt="" />
+      </div>
+    </section>
+    <section class="px-20 py-16 flex justify-between">
+      <div class="mx-3">
+        <img src="https://i.ibb.co/27tWjbG/travel.png" alt="" />
+      </div>
+      <div class="mx-3">
+        <h1 class="text-5xl font-mono font-light">
+          Our Quality Services
+        </h1>
+        <p class="mt-5 text-sm font-light">
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type.
+        </p>
+        <div class="grid grid-cols-1 mt-5 w-3/4">
+          <div class="flex place-items-center">
+            <div class="mr-7 text-3xl">1</div>
+            <div>
+              <h1 class="text-4xl font-mono font-light text-yellow-500 capitalize">ticket</h1>
+              <p class="text-light text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="flex place-items-center">
+            <div class="mr-7 text-3xl">1</div>
+            <div>
+              <h1 class="text-4xl font-mono font-light text-yellow-500 capitalize">ticket</h1>
+              <p class="text-light text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="flex place-items-center">
+            <div class="mr-7 text-3xl">1</div>
+            <div>
+              <h1 class="text-4xl font-mono font-light text-yellow-500 capitalize">ticket</h1>
+              <p class="text-light text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -121,6 +154,30 @@
 <script>
 export default {
   layout: 'default',
+  data() {
+    return {
+      explores: [
+        {
+          image: 'https://i.ibb.co/vPRZmrm/destination1.png',
+          title: 'Travel to Mountains',
+          location: 'Brazil',
+          price: '$6000',
+        },
+        {
+          image: 'https://i.ibb.co/f0gwTzc/destination2.png',
+          title: 'Travel to Deserts',
+          location: 'Alaska',
+          price: '$9000',
+        },
+        {
+          image: 'https://i.ibb.co/Vgz632C/destination3.png',
+          title: 'Travel to Hills',
+          location: 'GreenLand',
+          price: '$8000',
+        },
+      ],
+    }
+  },
 }
 </script>
 
