@@ -3,7 +3,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'sans': ['Nunito','ui-sans-serif', 'system-ui']
+      'sans': ['Nunito','ui-sans-serif', 'system-ui'],
+      'mono': ['Crimson Text', 'serif'],
     },
     extend: {
       shadows: {
