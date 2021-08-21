@@ -49,18 +49,70 @@
         <div class="grid grid-cols-3 mt-5 w-3/4">
           <div>
             <h1 class="text-4xl font-bold text-yellow-500">20</h1>
-            <p class="text-light">Years <br /> Experience</p>
+            <p class="text-light">
+              Years <br />
+              Experience
+            </p>
           </div>
           <div>
             <h1 class="text-4xl font-bold text-yellow-500">55</h1>
-            <p class="text-light">Destination <br /> Collaboration</p>
+            <p class="text-light">
+              Destination <br />
+              Collaboration
+            </p>
           </div>
           <div>
             <h1 class="text-4xl font-bold text-yellow-500">600+</h1>
-            <p class="text-light">Tourist <br /> Destination</p>
+            <p class="text-light">
+              Tourist <br />
+              Destination
+            </p>
           </div>
         </div>
-        <button class="py-2 px-5 bg-blue-900 text-white rounded-full mt-5">Explore Destination</button>
+        <button class="py-2 px-5 bg-blue-900 text-white rounded-full mt-5">
+          Explore Destination
+        </button>
+      </div>
+    </section>
+    <section class="px-20 py-32">
+      <div class="grid grid-cols-3 gap-3">
+        <div class="relative">
+          <div>
+            <img
+              class="z-0"
+              src="https://i.ibb.co/vPRZmrm/destination1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="
+              bg-white
+              shadow-lg
+              absolute
+              py-5
+              px-3
+              w-3/4
+              -mt-16
+              block
+              z-10
+              rounded-lg
+            "
+          >
+            <div class="flex justify-end">
+              <h1 class="text-sm">Brazil</h1>
+            </div>
+            <h1 class="text-xl font-mono">Travel to Mountains</h1>
+            <div class="flex justify-end">
+              <h1 class="font-light">$6000</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/f0gwTzc/destination2.png" alt="" />
+        </div>
+        <div>
+          <img src="https://i.ibb.co/Vgz632C/destination3.png" alt="" />
+        </div>
       </div>
     </section>
   </main>
