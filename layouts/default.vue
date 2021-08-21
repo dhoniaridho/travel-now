@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="font-semibold">
         <main-navbar />
         <Nuxt />
         <Footer />
