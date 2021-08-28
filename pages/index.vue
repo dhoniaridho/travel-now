@@ -23,10 +23,10 @@
           the 1500s, when an unknown printer took a galley of type.
         </p>
         <form class="mt-6">
-          <fieldset class="shadow-lg rounded-full flex">
+          <fieldset class="shadow-lg rounded-full flex flex-shrink lg:inline">
             <input
               placeholder="Burj khalifa, Dub"
-              class="py-2 px-5 md:px-7 rounded-full focus:outline-none"
+              class="py-2 flex-1 px-5 md:px-7 rounded-full focus:outline-none"
             />
             <button class="px-6 m-1 py-2 rounded-full text-white bg-yellow-400">
               Search
