@@ -1,16 +1,16 @@
 <template>
   <header>
     <nav>
-      <div class="flex h-16 justify-between place-items-center px-24">
+      <div class="flex h-16 justify-between place-items-center px-5 md:px-24">
         <div>
           <h1 class="text-3xl text-yellow-400">Travel<span class="text-gray-800">now</span></h1>
         </div>
-        <ul class="flex place-items-center">
+        <ul class="hidden md:flex place-items-center">
           <li v-for="nav in navigations" :key="nav.name" class="mx-2">
             <NuxtLink :to="nav.href">{{ nav.name }}</NuxtLink>
           </li>
         </ul>
-        <div>
+        <div class="hidden md:block">
          <Link href="/book">
             Book A Tour
          </Link>

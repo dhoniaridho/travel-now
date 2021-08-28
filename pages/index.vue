@@ -1,9 +1,19 @@
 <template>
   <main>
     <section
-      class="min-h-screen flex place-items-center px-20 object-cover hero"
+      class="
+        min-h-screen
+        flex
+        place-items-center place-content-center
+        flex-col
+        md:flex-row
+        px-5
+        md:px-20
+        object-cover
+        hero
+      "
     >
-      <div class="-mt-52 mx-5">
+      <div class="md:-mt-52 mx-5 order-2 md:order-1">
         <h1 class="text-5xl font-mono font-light">
           Find your next place <br />
           to travel
@@ -13,10 +23,10 @@
           the 1500s, when an unknown printer took a galley of type.
         </p>
         <form class="mt-6">
-          <fieldset class="shadow-lg rounded-full inline">
+          <fieldset class="shadow-lg rounded-full flex">
             <input
               placeholder="Burj khalifa, Dub"
-              class="py-2 px-7 rounded-full focus:outline-none"
+              class="py-2 px-5 md:px-7 rounded-full focus:outline-none"
             />
             <button class="px-6 m-1 py-2 rounded-full text-white bg-yellow-400">
               Search
@@ -24,7 +34,7 @@
           </fieldset>
         </form>
       </div>
-      <div class="mx-5">
+      <div class="mx-5 order-1 md:order-2">
         <img
           draggable="false"
           class="-mt-20"
@@ -33,7 +43,9 @@
         />
       </div>
     </section>
-    <section class="flex justify-between px-20 py-16">
+    <section
+      class="flex justify-between md:flex-row flex-col px-5 md:px-20 py-16"
+    >
       <div class="mx-3">
         <img src="https://i.ibb.co/27tWjbG/travel.png" alt="" />
       </div>
@@ -46,7 +58,7 @@
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type.
         </p>
-        <div class="grid grid-cols-3 mt-5 w-3/4">
+        <div class="grid md:grid-cols-3 mt-5 w-3/4">
           <div>
             <h1 class="text-4xl font-bold text-yellow-500">20</h1>
             <p class="text-light">
@@ -74,8 +86,8 @@
         </button>
       </div>
     </section>
-    <section class="px-20 py-32">
-      <div class="grid grid-cols-3 gap-3">
+    <section class="px-5 md:px-20 py-32">
+      <div class="grid md:grid-cols-3 gap-20 md:gap-3">
         <div v-for="explore in explores" :key="explore.image" class="relative">
           <div>
             <img class="z-0" :src="explore.image" alt="" />
@@ -105,14 +117,12 @@
         </div>
       </div>
     </section>
-    <section class="px-20 py-16 flex justify-between">
+    <section class="md:px-20 py-16 flex justify-between md:flex-row flex-col">
       <div class="mx-3">
         <img src="https://i.ibb.co/27tWjbG/travel.png" alt="" />
       </div>
       <div class="mx-3">
-        <h1 class="text-5xl font-mono font-light">
-          Our Quality Services
-        </h1>
+        <h1 class="text-5xl font-mono font-light">Our Quality Services</h1>
         <p class="mt-5 text-sm font-light">
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type.
@@ -121,7 +131,11 @@
           <div class="flex place-items-center">
             <div class="mr-7 text-3xl">1</div>
             <div>
-              <h1 class="text-4xl font-mono font-light text-yellow-500 capitalize">ticket</h1>
+              <h1
+                class="text-4xl font-mono font-light text-yellow-500 capitalize"
+              >
+                ticket
+              </h1>
               <p class="text-light text-sm">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
@@ -130,7 +144,11 @@
           <div class="flex place-items-center">
             <div class="mr-7 text-3xl">1</div>
             <div>
-              <h1 class="text-4xl font-mono font-light text-yellow-500 capitalize">ticket</h1>
+              <h1
+                class="text-4xl font-mono font-light text-yellow-500 capitalize"
+              >
+                ticket
+              </h1>
               <p class="text-light text-sm">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
@@ -139,7 +157,11 @@
           <div class="flex place-items-center">
             <div class="mr-7 text-3xl">1</div>
             <div>
-              <h1 class="text-4xl font-mono font-light text-yellow-500 capitalize">ticket</h1>
+              <h1
+                class="text-4xl font-mono font-light text-yellow-500 capitalize"
+              >
+                ticket
+              </h1>
               <p class="text-light text-sm">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>

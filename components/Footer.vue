@@ -1,12 +1,12 @@
 <template>
   <footer>
-    <div class="overflow-hidden footer object-fill bg-no-repeat py-20 px-20">
-      <div class="flex justify-around relative">
-          <div class="w-1/4">
+    <div class="overflow-hidden footer object-fill bg-no-repeat px-5 md:py-20 pt-20 pb-5 px-5 md:px-20">
+      <div class="flex justify-around flex-col md:flex-row relative">
+          <div class="md:w-1/4">
             <h1 class="text-3xl text-yellow-400">Travel<span class="text-gray-800">now</span></h1>
             <p class="text-sm font-thin">Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
           </div>
-          <div class="w-1/4">
+          <div class="md:w-1/4">
           <h1 class="font-bold text-lg">Tour</h1>
               <ul class="text-sm font-normal mt-1">
                 <li v-for="tour in tours" :key="tour" class="my-1">
@@ -14,7 +14,7 @@
                 </li>
               </ul>
           </div>
-          <div class="w-1/4">
+          <div class="md:w-1/4">
           <h1 class="font-bold text-lg">Support</h1>
               <ul class="text-sm font-normal mt-1">
                 <li v-for="support in supports" :key="support" class="my-1">
@@ -22,7 +22,7 @@
                 </li>
               </ul>
           </div>
-          <div class="w-1/4">
+          <div class="md:w-1/4">
           <h1 class="font-bold text-lg">Useful Pages</h1>
               <ul class="text-sm font-normal mt-1">
                 <li v-for="useful in usefuls" :key="useful" class="my-1">
